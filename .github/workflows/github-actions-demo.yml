@@ -6,11 +6,11 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-    - cron: "0 2 ** 1-5"
+    - cron: '15 6 * * 0'
   workflow_dispatch:
-  jobs:
-    Build:
-      run on: ubuntu-latest
+jobs:
+  Build:
+    - run on: ubuntu-latest
       steps:
         - run: |
             echo "The job was triggered by event: ${{ github.even_name }}"
