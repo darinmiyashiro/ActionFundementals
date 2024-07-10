@@ -28,5 +28,3 @@ ENTRYPOINT ["/entrypoint.sh"]
 ```
 
 </details>
-
-</details>
